@@ -1,0 +1,59 @@
+[
+  {
+    "productName": "product",
+    "price": "355",
+    "discount": "",
+    "imageUrl":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqGhYH7URSz9A22wDLTPJFImLAZl6pbeVLycFvU88P-s7poE_M",
+    "spectalTag":"new"
+  },
+  {
+    "productName": "product",
+    "price": "255",
+    "discount": "",
+    "imageUrl":"https://image1.superdry.com/static/images/products/upload3906239900662707078.jpg",
+    "spectalTag":"hit"
+  },
+  {
+    "productName": "product",
+    "price": "555",
+    "discount": "",
+    "imageUrl":"http://ecx.images-amazon.com/images/I/511OYkTL6cL._AC_UL260_SR200,260_.jpg",
+    "spectalTag":""
+  },
+  {
+    "productName": "product",
+    "price": "955",
+    "discount": "",
+    "imageUrl":"https://image1.superdry.com/static/images/products/upload3906239900662707078.jpg",
+    "spectalTag":""
+  },
+  {
+    "productName": "product",
+    "price": "755",
+    "discount": "",
+    "imageUrl":"http://s7d5.scene7.com/is/image/ColumbiaSportswear2/1586111_450_f",
+    "spectalTag":""
+  },
+  {
+    "productName": "product",
+    "price": "315",
+    "discount": "",
+    "imageUrl":"http://www.erasfashion.com/wp-content/uploads/2015/12/Mens-Shirts-005.jpg",
+    "spectalTag":""
+  },
+  {
+    "productName": "product",
+    "price": "155",
+    "discount": "",
+    "imageUrl":"http://static.quiksilver.com/www/store.quiksilver.eu/html/images/catalogs/global/quiksilver-products/all/default/medium-large2/eqywt03435_snapupls,v_byj1_frt1.jpg",
+    "spectalTag":""
+  },
+  {
+    "productName": "product",
+    "price": "355",
+    "discount": "600",
+    "imageUrl":"https://n4.sdlcdn.com/imgs/c/o/o/Unique-for-Men-Maroon-Formal-SDL756097697-1-56d3a.jpg",
+    "spectalTag":"sale"
+  }
+]
+

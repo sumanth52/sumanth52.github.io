@@ -1,0 +1,147 @@
+.text-center {
+  text-align: center; }
+
+.font-italic {
+  font-style: italic; }
+
+.borderNone {
+  border-right: none; }
+
+.text-small {
+  font-size: 14px; }
+
+.mainPage h1, .mainPage h2, .mainPage h3, .mainPage h4, .mainPage h5, .mainPage h6 {
+  font-family: Montserrat;
+  font-weight: 700; }
+.mainPage md-toolbar.md-default-theme:not(.md-menu-toolbar), .mainPage md-toolbar:not(.md-menu-toolbar) {
+  color: #204AA4;
+  background: transparent; }
+.mainPage md-toolbar:not(.md-menu-toolbar) .md-button:not(.md-raised) {
+  color: #424242; }
+  .mainPage md-toolbar:not(.md-menu-toolbar) .md-button:not(.md-raised):hover {
+    background: transparent; }
+  .mainPage md-toolbar:not(.md-menu-toolbar) .md-button:not(.md-raised) .arrowDown {
+    font-size: 18px;
+    vertical-align: inherit; }
+.mainPage .md-toolbar-tools h2 {
+  max-width: 200px; }
+.mainPage .cartImg {
+  margin-right: 15px; }
+.mainPage .bodyGrid md-grid-tile {
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc; }
+  .mainPage .bodyGrid md-grid-tile figcaption {
+    width: 100%; }
+    .mainPage .bodyGrid md-grid-tile figcaption .productName {
+      text-align: center;
+      font-weight: 500; }
+    .mainPage .bodyGrid md-grid-tile figcaption .productPrice {
+      text-align: center; }
+      .mainPage .bodyGrid md-grid-tile figcaption .productPrice.sale {
+        font-size: 12px;
+        opacity: 0.4;
+        text-decoration: line-through; }
+  .mainPage .bodyGrid md-grid-tile md-grid-tile-footer, .mainPage .bodyGrid md-grid-tile md-grid-tile-header {
+    background: transparent;
+    color: #424242; }
+  .mainPage .bodyGrid md-grid-tile .mdCard {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-shadow: none; }
+    .mainPage .bodyGrid md-grid-tile .mdCard .priceLabel {
+      position: absolute;
+      max-width: 300px;
+      z-index: 1;
+      left: 8%;
+      color: white; }
+      .mainPage .bodyGrid md-grid-tile .mdCard .priceLabel .description {
+        font-size: 20px;
+        opacity: 0.6;
+        text-transform: capitalize;
+        color: #333; }
+      .mainPage .bodyGrid md-grid-tile .mdCard .priceLabel .title {
+        font-size: 32px;
+        text-transform: capitalize;
+        color: #000;
+        margin: 5px 0; }
+      .mainPage .bodyGrid md-grid-tile .mdCard .priceLabel .buyButton {
+        border-radius: 100px;
+        border: none;
+        background: #204AA4;
+        color: white;
+        font-weight: 700;
+        text-transform: capitalize; }
+        .mainPage .bodyGrid md-grid-tile .mdCard .priceLabel .buyButton .span {
+          min-width: 75px;
+          display: inline-block;
+          padding: 8px; }
+          .mainPage .bodyGrid md-grid-tile .mdCard .priceLabel .buyButton .span.boderLeft {
+            border-left: 1px solid #ccc; }
+.mainPage .color {
+  color: #204AA4; }
+.mainPage .carousalTab.errors2 {
+  border-left: 10px solid #204AA4; }
+  .mainPage .carousalTab.errors2 .displayImage {
+    opacity: 0.2; }
+.mainPage .carousalTab .productImage {
+  height: 60%; }
+.mainPage .carousalTab .displayImage {
+  height: 100%;
+  width: 100%; }
+.mainPage .carousalTab.allBrandsTab .allBrands {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+  max-width: 80px; }
+.mainPage .carousalTab.allBrandsTab .totalBrands {
+  color: #ccc;
+  font-size: 80px;
+  font-weight: 700; }
+.mainPage .footer {
+  background: #222;
+  color: #656565; }
+  .mainPage .footer ol {
+    width: 85%;
+    margin: auto;
+    color: white;
+    text-align: center; }
+    .mainPage .footer ol li {
+      list-style: initial; }
+  .mainPage .footer .copyRights {
+    text-align: center;
+    padding: 5px 10%; }
+  .mainPage .footer .inputLabel {
+    max-width: 70%;
+    margin: auto; }
+    .mainPage .footer .inputLabel label {
+      background: #39393a;
+      padding: 7px;
+      border-radius: 50px; }
+      .mainPage .footer .inputLabel label input {
+        background: transparent;
+        border: none;
+        margin: 0 10px;
+        color: white;
+        font-style: italic;
+        font-size: 12px;
+        width: 80%; }
+  .mainPage .footer .footerList md-grid-tile {
+    border-bottom: 1px solid #222;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc; }
+    .mainPage .footer .footerList md-grid-tile .socialIcon {
+      padding: 0 10%;
+      width: 100%; }
+  .mainPage .footer .text-center {
+    text-align: center; }
+  .mainPage .footer .fa-3 {
+    font-size: 24px;
+    padding: 12px; }
+  .mainPage .footer .paypal img {
+    max-width: 64px;
+    margin-top: 16px; }
+
+/*# sourceMappingURL=global.css.map */

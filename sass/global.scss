@@ -1,0 +1,172 @@
+
+.text-center{text-align: center;}
+.font-italic{font-style: italic;}
+.borderNone{border-right: none;}
+.text-small{font-size:14px;}
+.mainPage{
+	h1, h2, h3, h4, h5, h6 {font-family: Montserrat; font-weight:700;}
+	md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+	    color: #204AA4;
+	    background: transparent;
+	}
+	md-toolbar:not(.md-menu-toolbar) .md-button:not(.md-raised) {
+	    color: #424242;
+	    &:hover{
+	    	background:transparent
+	    }
+	    .arrowDown{
+	    	font-size: 18px;
+			vertical-align: inherit;
+		}
+	}
+	.md-toolbar-tools h2{max-width: 200px;}
+	.cartImg{margin-right: 15px;}
+	.bodyGrid{
+		md-grid-tile {
+		    border-left: 1px solid #ccc;
+			border-top: 1px solid #ccc;
+			figcaption{
+				width:100%;
+				.productName{
+					text-align:center;
+					font-weight:500;
+				}
+				.productPrice{
+					text-align:center;
+					&.sale{
+						font-size: 12px;
+						opacity: 0.4;
+						text-decoration: line-through;
+					}
+				}
+			}
+			md-grid-tile-footer, md-grid-tile-header{
+				background: transparent;
+				color: #424242;
+			}
+			.mdCard{
+			    height: 100%;
+			    width: 100%;
+			    margin: 0;
+			    box-shadow: none;
+			    .priceLabel {
+				    position: absolute;
+				    max-width: 300px;
+				    z-index: 1;
+				    left: 8%;
+				    color: white;
+				    .description {
+					    font-size: 20px;
+					    opacity: 0.6;
+					    text-transform: capitalize;
+					    color: #333;
+					}
+					.title {
+					    font-size: 32px;
+					    text-transform: capitalize;
+					    color: #000;
+					    margin: 5px 0;
+					}
+					.buyButton{
+						border-radius: 100px;
+						border: none;
+						background: #204AA4;
+						color: white;
+						font-weight: 700;
+						text-transform: capitalize;
+						.span{
+							min-width: 75px;
+							display: inline-block;
+							padding: 8px;
+							&.boderLeft{border-left: 1px solid #ccc;}
+						}
+					}
+				}
+			}		
+		}
+	}
+	.color{color:#204AA4;}
+	.carousalTab{
+		&.errors2{
+			border-left: 10px solid #204AA4;
+			.displayImage{opacity: 0.2;}
+		}
+		.productImage{
+			height: 60%;
+		}
+		.displayImage{
+			height: 100%;
+			width: 100%;
+		}
+		&.allBrandsTab{
+			.allBrands{
+				position: absolute;
+				text-transform: uppercase;
+				font-size: 20px;
+				text-align: center;
+				color: blue;
+				max-width: 80px;
+			}
+			.totalBrands {
+			    color: #ccc;
+			    font-size: 80px;
+			    font-weight: 700;
+			}
+		}
+	}
+	.footer{
+		ol{
+			width: 85%;
+			margin: auto;
+			color: white;
+			text-align: center;
+			li{list-style: initial;}
+		}
+		.copyRights{
+			text-align: center;
+			padding: 5px 10%;
+		}
+		background: #222;
+		color: #656565;
+		.inputLabel{
+			max-width: 70%;
+			margin: auto;
+			label{
+				background: #39393a;
+				padding: 7px;
+				border-radius: 50px;
+				input{
+					background: transparent;
+					border: none;
+					margin: 0 10px;
+					color: white;
+					font-style: italic;
+					font-size: 12px;
+					width: 80%;
+				}
+			}
+		}
+		.footerList{
+			md-grid-tile{
+				border-bottom: 1px solid #222;
+			    border-left: 1px solid #ccc;
+				border-top: 1px solid #ccc;
+				.socialIcon{
+					padding: 0 10%;
+					width: 100%;
+				}
+			}
+		}
+		.text-center {
+		    text-align: center;
+		}
+		.fa-3{
+			font-size: 24px;
+			padding: 12px;
+
+		}
+		.paypal img{max-width: 64px; margin-top: 16px;}
+			
+	}	
+
+}

@@ -1,4 +1,4 @@
-
+.zero-margin{margin:0;}
 .text-center{text-align: center;}
 .font-italic{font-style: italic;}
 .borderNone{border-right: none;}
@@ -91,6 +91,17 @@
 			border-left: 10px solid #204AA4;
 			.displayImage{opacity: 0.2;}
 		}
+		.firstBlock{
+			height:100%;
+			width:45%;
+			text-align:center;
+			span{
+				&.tab1{}
+				&.tab2{font-size: 22px;color: #204AA4;font-weight:700}
+				&.tab3{}
+
+			}
+		}
 		.productImage{
 			height: 60%;
 		}
@@ -109,18 +120,21 @@
 			}
 			.totalBrands {
 			    color: #ccc;
-			    font-size: 80px;
+			    font-size: 70px;
 			    font-weight: 700;
 			}
+			@media(max-width:786px){.totalBrands{font-size: 40px;} .allBrands{font-size: 15px;} }
 		}
 	}
 	.footer{
-		ol{
+		.bottomTab{
+			ol{width:50%}
 			width: 85%;
 			margin: auto;
 			color: white;
 			text-align: center;
 			li{list-style: initial;}
+			@media(max-width:786px){ol{width:100%}}
 		}
 		.copyRights{
 			text-align: center;
@@ -168,5 +182,4 @@
 		.paypal img{max-width: 64px; margin-top: 16px;}
 			
 	}	
-
 }

@@ -1,3 +1,6 @@
+.zero-margin {
+  margin: 0; }
+
 .text-center {
   text-align: center; }
 
@@ -84,6 +87,14 @@
   border-left: 10px solid #204AA4; }
   .mainPage .carousalTab.errors2 .displayImage {
     opacity: 0.2; }
+.mainPage .carousalTab .firstBlock {
+  height: 100%;
+  width: 45%;
+  text-align: center; }
+  .mainPage .carousalTab .firstBlock span.tab2 {
+    font-size: 22px;
+    color: #204AA4;
+    font-weight: 700; }
 .mainPage .carousalTab .productImage {
   height: 60%; }
 .mainPage .carousalTab .displayImage {
@@ -98,18 +109,28 @@
   max-width: 80px; }
 .mainPage .carousalTab.allBrandsTab .totalBrands {
   color: #ccc;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 700; }
+@media (max-width: 786px) {
+  .mainPage .carousalTab.allBrandsTab .totalBrands {
+    font-size: 40px; }
+  .mainPage .carousalTab.allBrandsTab .allBrands {
+    font-size: 15px; } }
 .mainPage .footer {
   background: #222;
   color: #656565; }
-  .mainPage .footer ol {
+  .mainPage .footer .bottomTab {
     width: 85%;
     margin: auto;
     color: white;
     text-align: center; }
-    .mainPage .footer ol li {
+    .mainPage .footer .bottomTab ol {
+      width: 50%; }
+    .mainPage .footer .bottomTab li {
       list-style: initial; }
+    @media (max-width: 786px) {
+      .mainPage .footer .bottomTab ol {
+        width: 100%; } }
   .mainPage .footer .copyRights {
     text-align: center;
     padding: 5px 10%; }

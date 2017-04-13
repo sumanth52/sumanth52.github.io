@@ -16,7 +16,8 @@
   <body ng-app="myApp">
   <div class="container mainPage" ng-controller="appCtrl">
   <md-toolbar class="header">
-   <div class="md-toolbar-tools">
+   <h2 md-truncate flex show-xs hide><i class="material-icons">menu</i><img class="logo" src="./img/logo.png"></h2>
+   <div class="md-toolbar-tools"  hide-xs>
      <h2 md-truncate flex hide-xs><i class="material-icons">menu</i><img class="logo" src="./img/logo.png"></h2>
                 <md-menu>
                     <md-button ng-click="$mdOpenMenu($event)">
@@ -74,6 +75,7 @@
 <img src="./img/bag.png" class="cartImg">
 <img src="./img/account.png" class="cartImg">
 <i class="material-icons" class="cartImg">search</i>
+
    </div>
   </md-toolbar>
 
@@ -85,7 +87,7 @@
         md-gutter="0px" md-gutter-gt-sm="0px" >
 
     <md-grid-tile class="carousalTab"
-        md-rowspan="8" md-colspan="12" >    
+        md-rowspan="8"  md-rowspan-xs="12" md-colspan="12"   >    
       <md-card layout="column" layout-align="center center" class="mdCard" ng-if="data[act].id==0">
       <div class="priceLabel">
         <h4 class="color">MEN</h4>
@@ -161,6 +163,15 @@
         md-cols="16"  md-cols-sm="12"  md-cols-xs="12" 
         md-row-height="6:5"
         md-gutter="0px" md-gutter-gt-sm="0px" >
+    <md-grid-tile class="carousalTab" md-rowspan="4" md-colspan="4"  md-colspan-xs="6" md-rowspan-xs="6">
+      <div layout="column" class="firstBlock">
+        <span flex="20"></span>
+        <span flex="20" class="tab1"><img src="img/dia.png"></span>
+        <span flex="30" class="tab2">FEATURED PRODUCTS</span>
+        <span flex="20" class="tab3">the best of our stores</span>
+        <span flex="20"></span>
+      </div>
+    </md-grid-tile>
     <md-grid-tile class="carousalTab"
         md-rowspan="4" md-colspan="4"  md-colspan-xs="6" md-rowspan-xs="6" ng-repeat="product in products">
       <md-grid-tile-header>
@@ -171,7 +182,7 @@
         <div layout="row" flex >
           <span flex="15" class="productPrice"><img ng-if="product.spectalTag" ng-src={{"img/"+product.spectalTag+'.png'}}></span>
           <h3 flex="65"  class="productPrice">{{product.price | currency:'$':0}}</h3>
-          <span flex="15"  class="productPrice" ng-class="product.spectalTag">{{product.discount | currency:'$':0 }}</span>
+          <span flex="15"  class="productPrice" ng-class="product.spectalTag" ng-if="product.discount">{{product.discount | currency:'$':0 }}</span>
         </div>
       </md-grid-tile-footer>
     </md-grid-tile>
@@ -194,25 +205,29 @@
         md-cols="4"
         md-row-height="5:1"
         md-gutter="0px" md-gutter-gt-sm="0px" >
-    <md-grid-tile md-rowspan="1" md-colspan="4" class="borderNone">
-          <ol layout="row">
-            <li flex="15">Men</li>
-            <li flex="15">Women</li>
-            <li flex="15">Kids</li>
-            <li flex="15">Accessories</li>
-            <li flex="15">Sale</li>
-            <li flex="15">LookBook</li>
-            <li flex="15">Blog</li>
-          </ol>
+    <md-grid-tile md-rowspan="1" md-colspan="4" class="borderNone"  md-rowspan-xs="4" md-colspan-xs="4" show-gt-xs>
+          <div layout="row" layout-xs="column" class="bottomTab">
+            <ol layout="row" class="zero-margin">
+              <li flex="30">Men</li>
+              <li flex="30">Women</li>
+              <li flex="30">Kids</li>
+              <li flex="30">Accessories</li>
+            </ol>
+            <ol layout="row" class="zero-margin">
+              <li flex="30">Sale</li>
+              <li flex="30">LookBook</li>
+              <li flex="30">Blog</li>
+            </ol>
+          </div>
     </md-grid-tile>
-    <md-grid-tile class="" md-rowspan="2" md-colspan="1">
-      <div class="copyRights" layout="column">
+    <md-grid-tile class="" md-rowspan="2" md-colspan="1"  md-rowspan-xs="4" md-colspan-xs="4" >
+      <div class="copyRights" layout="column" layout-xs="row">
         <span class=""><img src="img/logo2.png"></span>
         <span class="font-italic text-small">&copy; 2015 DivaniRaj UI Kit. All rights reserved</span>
       </div>
         
     </md-grid-tile>
-    <md-grid-tile class="" md-rowspan="2" md-colspan="2" >
+    <md-grid-tile class="" md-rowspan="2" md-colspan="2"  md-rowspan-xs="8" md-colspan-xs="4" >
       <div class="inputLabel" layout="column" flex>
         <label>
           <i class="fa fa-envelope-o gray" aria-hidden="true"></i>
@@ -227,15 +242,15 @@
       </div>
         
     </md-grid-tile>
-    <md-grid-tile class="" md-rowspan="1" md-colspan="1" class="borderNone">
-      <div class="socialIcon" layout="row">
+    <md-grid-tile class="" md-rowspan="1" md-colspan="1" class="borderNone"   md-rowspan-xs="4" md-colspan-xs="4" >
+      <div class="socialIcon" layout="row" >
         <span class="text-center" flex="25"><i class="fa fa-twitter fa-3" aria-hidden="true"></i></span>
         <span class="text-center" flex="25"><i class="fa fa-facebook fa-3" aria-hidden="true"></i></span>
         <span class="text-center" flex="25"><i class="fa fa-pinterest-p fa-3" aria-hidden="true"></i></span>
         <span class="text-center" flex="25"><i class="fa fa-facebook fa-3" aria-hidden="true"></i></span>
       </div>
     </md-grid-tile>
-    <md-grid-tile class="" md-rowspan="1" md-colspan="1" >
+    <md-grid-tile class="" md-rowspan="1" md-colspan="1"  md-rowspan-xs="4" md-colspan-xs="4" >
       <div class="socialIcon" layout="row">
         <span class="text-center paypal" flex="33"><img src="img/paypal.png"></span>
         <span class="text-center" flex="33"><i class="fa fa-cc-mastercard fa-3" aria-hidden="true"></i></span>

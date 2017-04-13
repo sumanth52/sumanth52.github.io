@@ -43,16 +43,9 @@
   },
   {
     "productName": "product",
-    "price": "155",
-    "discount": "",
+    "price": "799",
+    "discount": "900",
     "imageUrl":"http://static.quiksilver.com/www/store.quiksilver.eu/html/images/catalogs/global/quiksilver-products/all/default/medium-large2/eqywt03435_snapupls,v_byj1_frt1.jpg",
-    "spectalTag":""
-  },
-  {
-    "productName": "product",
-    "price": "355",
-    "discount": "600",
-    "imageUrl":"https://n4.sdlcdn.com/imgs/c/o/o/Unique-for-Men-Maroon-Formal-SDL756097697-1-56d3a.jpg",
     "spectalTag":"sale"
   }
 ]

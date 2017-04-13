@@ -20,10 +20,10 @@
    <div class="md-toolbar-tools"  hide-xs>
      <h2 md-truncate flex hide-xs><i class="material-icons">menu</i><img class="logo" src="./img/logo.png"></h2>
                 <md-menu>
-                    <md-button ng-click="$mdOpenMenu($event)">
+                    <md-button ng-mouseenter="$mdOpenMenu()">
                         Men <i class="material-icons arrowDown">arrow_drop_down</i>
                     </md-button>
-                    <md-menu-content width="3">
+                    <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
                         <md-menu-item>
                             <md-button>Item 1</md-button>
                         </md-menu-item>
@@ -33,10 +33,10 @@
                     </md-menu-content>
                 </md-menu>
                 <md-menu>
-                    <md-button ng-click="$mdOpenMenu($event)">
+                    <md-button ng-mouseenter="$mdOpenMenu($event)" >
                         Women <i class="material-icons arrowDown">arrow_drop_down</i>
                     </md-button>
-                    <md-menu-content width="3">
+                    <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
                         <md-menu-item>
                             <md-button>Item 1</md-button>
                         </md-menu-item>
@@ -46,10 +46,10 @@
                     </md-menu-content>
                 </md-menu>
                 <md-menu>
-                    <md-button ng-click="$mdOpenMenu($event)">
+                    <md-button ng-mouseenter="$mdOpenMenu($event)">
                         Kids <i class="material-icons arrowDown">arrow_drop_down</i>
                     </md-button>
-                    <md-menu-content width="3">
+                    <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
                         <md-menu-item>
                             <md-button>Item 1</md-button>
                         </md-menu-item>
@@ -59,10 +59,10 @@
                     </md-menu-content>
                 </md-menu>
                 <md-menu>
-                    <md-button ng-click="$mdOpenMenu($event)">
+                    <md-button ng-mouseenter="$mdOpenMenu($event)">
                         Acessories <i class="material-icons arrowDown">arrow_drop_down</i>
                     </md-button>
-                    <md-menu-content width="3">
+                    <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
                         <md-menu-item>
                             <md-button>Item 1</md-button>
                         </md-menu-item>
